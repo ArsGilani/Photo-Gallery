@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="row">
+  <% @posts.each do |post| %>
+  <div class="col-md-3">
+    <div class="wrap_img_indexpage">
+      <div class="post_img_thumb">
+        <%= link_to (image_tag post.image.url(:thumb)), post_path(post) %>
+      </div>
+      <div class="title_post_block">
+        <%= post.title %>     
+      </div>
+      <div class="name_block">
+        <b>By:</b> <%= link_to post.user.name, user_path(post) %>      
+      </div>    
+      
+    </div>
+  </div>
+  <% end %>  
+</div>
+
+  
+
+
+

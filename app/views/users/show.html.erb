@@ -1,0 +1,16 @@
+<h3>My Gallery</h3>
+
+<% @posts.each do |post| %>
+	<div class="col-md-4">
+		<div class="in_box">
+			<div class="wrap_post_img">
+				<%= link_to (image_tag post.image.url(:thumb)), post_path(post)%>					
+			</div>	
+			<div class="title_post_block">
+				<%= post.title %>     
+			</div>
+		</div>
+	</div> 
+<% end %>
+
+<%= link_to 'New Post', new_post_path %>

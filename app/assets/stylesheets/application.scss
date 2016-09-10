@@ -1,0 +1,27 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body{
+	background: #fafafa;
+}
+.title_post_block{
+	font-weight: 600;
+	text-decoration: underline;
+	background: #fff;
+}
+
+.post_img_thumb img{
+	width: 100%;
+}
+.wrap_img_indexpage{
+	width: 242px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+.name_block{
+	padding-bottom: 10px;
+}
+.form_box{
+	background: #ccc;
+	padding: 10px;
+}
